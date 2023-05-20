@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="secim2023" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6V-ya-24D">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avm-nH-Tsh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="auc-Ix-F9c">
+                                                <rect key="frame" x="10" y="10" width="180" height="580"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recep-tayyip-erdogan" translatesAutoresizingMaskIntoConstraints="NO" id="9Js-eR-3qY">
+                                                        <rect key="frame" x="23.5" y="0.0" width="133" height="162"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recep Tayyip Erdoğan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x11-fb-O13">
+                                                        <rect key="frame" x="0.0" y="204" width="180" height="25"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1l8-zz-gBk">
+                                                        <rect key="frame" x="71" y="271" width="38" height="104"/>
+                                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="70"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="U6V-hu-dTZ">
+                                                        <rect key="frame" x="33" y="417" width="114" height="163"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-F9-cpm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="114" height="60.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="arrow.up.square" catalog="system" title="Oy Arttır">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15" strokeWidth="5">
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="strokeColor" systemColor="tintColor"/>
+                                                                    </backgroundConfiguration>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="erdoganOyArttirButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Efj-Ke-Utk"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha6-Ue-SQL">
+                                                                <rect key="frame" x="0.0" y="102.5" width="114" height="60.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="arrow.down.square" catalog="system" title="Oy Azalt">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15" strokeWidth="5">
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="strokeColor" systemColor="systemRedColor"/>
+                                                                    </backgroundConfiguration>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="erdoganOyAzaltButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZ2-FX-fzf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-UH-hI2">
+                                                <rect key="frame" x="252.5" y="10" width="151.5" height="580"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kemalKilicdaroglu" translatesAutoresizingMaskIntoConstraints="NO" id="W9m-Xx-5LS">
+                                                        <rect key="frame" x="9.5" y="0.0" width="133" height="162"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kemal Kılıçdaroğlu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8c-yP-Yug">
+                                                        <rect key="frame" x="0.0" y="204" width="151.5" height="25"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j89-lf-qmP">
+                                                        <rect key="frame" x="57" y="271" width="38" height="104"/>
+                                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="70"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Z8b-fF-PWL">
+                                                        <rect key="frame" x="19" y="417" width="114" height="163"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbS-Gk-L6u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="114" height="60.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="arrow.up.square" catalog="system" title="Oy Arttır">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15" strokeWidth="5">
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="strokeColor" systemColor="tintColor"/>
+                                                                    </backgroundConfiguration>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="KilicdarogluOyArttirButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pqe-6O-hET"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUg-9W-yaN">
+                                                                <rect key="frame" x="0.0" y="102.5" width="114" height="60.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="arrow.down.square" catalog="system" title="Oy Azalt">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15" strokeWidth="5">
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="strokeColor" systemColor="systemRedColor"/>
+                                                                    </backgroundConfiguration>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="KilicdarogluOyAzaltButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzq-Pl-Vaj"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="xgc-UH-hI2" secondAttribute="bottom" constant="10" id="5Am-ej-RJN"/>
+                                            <constraint firstAttribute="trailing" secondItem="xgc-UH-hI2" secondAttribute="trailing" constant="10" id="Cl1-ak-5kU"/>
+                                            <constraint firstItem="auc-Ix-F9c" firstAttribute="top" secondItem="avm-nH-Tsh" secondAttribute="top" constant="10" id="Jk4-aK-Prp"/>
+                                            <constraint firstItem="auc-Ix-F9c" firstAttribute="leading" secondItem="avm-nH-Tsh" secondAttribute="leading" constant="10" id="V11-X6-5EJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="auc-Ix-F9c" secondAttribute="bottom" constant="10" id="W0Z-wt-SdU"/>
+                                            <constraint firstItem="xgc-UH-hI2" firstAttribute="top" secondItem="avm-nH-Tsh" secondAttribute="top" constant="10" id="mkm-ti-nYz"/>
+                                            <constraint firstAttribute="height" constant="600" id="rll-bs-XA5"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIJ-El-1z5">
+                                        <rect key="frame" x="0.0" y="600" width="414" height="214"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvJ-1L-fQi">
+                                                <rect key="frame" x="30" y="179.5" width="354" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Sıfırla">
+                                                    <backgroundConfiguration key="background" cornerRadius="15">
+                                                        <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="sifirlaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cud-vW-pkE"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="qKR-AX-Fai">
+                                                <rect key="frame" x="120" y="0.0" width="174" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplam Oy :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7j-Cg-zUY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trE-Oi-fuf">
+                                                        <rect key="frame" x="157" y="0.0" width="17" height="30"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qKR-AX-Fai" firstAttribute="top" secondItem="VIJ-El-1z5" secondAttribute="top" id="9ff-LE-zk3"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZvJ-1L-fQi" secondAttribute="bottom" id="Tml-uF-xv5"/>
+                                            <constraint firstItem="qKR-AX-Fai" firstAttribute="centerX" secondItem="VIJ-El-1z5" secondAttribute="centerX" id="bsL-Si-ZLl"/>
+                                            <constraint firstItem="ZvJ-1L-fQi" firstAttribute="leading" secondItem="VIJ-El-1z5" secondAttribute="leading" constant="30" id="mfv-xH-M9G"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZvJ-1L-fQi" secondAttribute="trailing" constant="30" id="y1K-tf-3Sh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="avm-nH-Tsh" secondAttribute="trailing" id="0To-8h-IOu"/>
+                                    <constraint firstItem="VIJ-El-1z5" firstAttribute="top" secondItem="avm-nH-Tsh" secondAttribute="bottom" id="VaS-AW-bnO"/>
+                                    <constraint firstAttribute="trailing" secondItem="VIJ-El-1z5" secondAttribute="trailing" id="WoD-mk-VbE"/>
+                                    <constraint firstItem="VIJ-El-1z5" firstAttribute="leading" secondItem="e6V-ya-24D" secondAttribute="leading" id="bly-zg-DnT"/>
+                                    <constraint firstItem="avm-nH-Tsh" firstAttribute="leading" secondItem="e6V-ya-24D" secondAttribute="leading" id="ebC-3m-IRa"/>
+                                    <constraint firstItem="avm-nH-Tsh" firstAttribute="top" secondItem="e6V-ya-24D" secondAttribute="top" id="lo3-c0-xS1"/>
+                                    <constraint firstAttribute="bottom" secondItem="VIJ-El-1z5" secondAttribute="bottom" id="uif-Wf-FV4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e6V-ya-24D" secondAttribute="trailing" id="JPt-mT-hRL"/>
+                            <constraint firstItem="e6V-ya-24D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S4e-wU-qEB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e6V-ya-24D" secondAttribute="bottom" id="ZPa-AJ-jfv"/>
+                            <constraint firstItem="e6V-ya-24D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wzu-JN-7ws"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="erdoganOySayisi" destination="1l8-zz-gBk" id="yN4-B1-TPr"/>
+                        <outlet property="kilicdarogluOySayisi" destination="j89-lf-qmP" id="Xqr-67-yxN"/>
+                        <outlet property="toplamOySayisi" destination="trE-Oi-fuf" id="mmG-gz-mVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.826086956521742" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.down.square" catalog="system" width="128" height="114"/>
+        <image name="arrow.up.square" catalog="system" width="128" height="114"/>
+        <image name="kemalKilicdaroglu" width="133" height="133"/>
+        <image name="recep-tayyip-erdogan" width="133" height="133"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
